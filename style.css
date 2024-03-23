@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: black;
+  border: 3px solid yellow;
+  margin: 0 auto;
+}
+
+#container h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+#container input {
+  width: 80%;
+  height: fit-content;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: black;
+  border: 3px solid yellow;
+  color: white;
+}
+
+#buttons {
+  display: flex;
+}
+
+#buttons button {
+  padding: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 15px;
+  background-color: black;
+  border: 3px solid yellow;
+  color: white;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+#container button:hover {
+  cursor: pointer;
+  background-color: green;
+  transform: scale(1.05);
+}
+
+#what-to-do-p {
+  font-size: 1.5em;
+  margin: 10px 0;
+  font-weight: bold;
+  color: yellow;
+  padding-bottom: 3px;
+}
+
+#todo-items-container {
+  width: 90%;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item {
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 3px solid white;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  margin: 5px auto 15px auto;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.delete-btn {
+  border: none;
+  background: black;
+  margin: 0 auto;
+  font-size: inherit;
+  margin-left: 10px;
+}
