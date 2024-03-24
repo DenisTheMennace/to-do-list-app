@@ -80,11 +80,7 @@ itemsContainer.addEventListener("click", function (event) {
       items.splice(indexToRemove, 1);
       localStorage.setItem("items", JSON.stringify(items));
     }
-  }
-});
-
-itemsContainer.addEventListener("click", function (event) {
-  if (event.target.classList.contains("item")) {
+  } else if (event.target.classList.contains("item")) {
     const itemText = event.target;
     if (itemText.style.textDecoration === "line-through") {
       itemText.style.textDecoration = "none";
