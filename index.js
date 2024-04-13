@@ -16,7 +16,7 @@ if (itemsFromLocalStorage) {
 textInput.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     if (textInput.value === "") {
-      console.log("No text input!");
+      
       return;
     }
 
@@ -31,7 +31,7 @@ textInput.addEventListener("keypress", function (event) {
 
 submitButton.addEventListener("click", function () {
   if (textInput.value === "") {
-    console.log("No text input!");
+    
     return;
   }
 
